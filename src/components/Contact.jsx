@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
@@ -12,8 +12,8 @@ function Contact() {
   const navigate = useNavigate();
 
   const handleClick = (val) => {
-    navigate(`/product/${val.id}`, {state: val})
-  }
+    navigate(`/product/${val.id}`, { state: val });
+  };
   return (
     <>
       <div>Contact</div>
@@ -22,9 +22,8 @@ function Contact() {
           <div onClick={() => handleClick(el)}>{el.name}</div>
         </div>
       ))}
-      <Link to="/custom-hook">
-        Custom Hook
-      </Link>
+      <Link to="/custom-hook">Custom Hook</Link>
+      <Link to="/promise">Promise</Link>
     </>
   );
 }

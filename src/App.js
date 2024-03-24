@@ -1,9 +1,9 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Contact from "./components/Contact";
 import Product from "./Product";
 import CustomHook from "./components/CustomHook";
+import PromiseComp from "./components/Promise";
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
         <Route path="/" exact element={<Contact />} />
         <Route path="/product/:id" element={<Product />} />
         <Route path="/custom-hook" element={<CustomHook />} />
+        <Route path="/promise" element={<PromiseComp />} />
       </Routes>
     </div>
   );
