@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
 function PromiseComp() {
+  const [val, setVal] = useState("");
   const state = false;
 
   const newPromise = new Promise((resolve, reject) => {
@@ -9,10 +10,8 @@ function PromiseComp() {
       : reject(" hi promise is rejected");
   });
 
-  newPromise
-    .then((data) => console.log(data))
-    .catch((error) => console.log(error));
-  return <div>PromiseComp</div>;
+  newPromise.then((data) => setVal(data)).catch((error) => setVal(error));
+  return <div>PromiseComp: {val}</div>;
 }
 
 export default PromiseComp;
