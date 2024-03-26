@@ -4,6 +4,7 @@ import Contact from "./components/Contact";
 import Product from "./Product";
 import CustomHook from "./components/CustomHook";
 import PromiseComp from "./components/Promise";
+import Stopwatch from "./components/Stopwatch";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/product/:id" element={<Product />} />
         <Route path="/custom-hook" element={<CustomHook />} />
         <Route path="/promise" element={<PromiseComp />} />
+        <Route path="/stopwatch" element={<Stopwatch />} />
       </Routes>
     </div>
   );

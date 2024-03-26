@@ -24,6 +24,7 @@ function Contact() {
       ))}
       <Link to="/custom-hook">Custom Hook</Link>
       <Link to="/promise">Promise</Link>
+      <Link to="/stopwatch">Stopwatch</Link>
     </>
   );
 }
